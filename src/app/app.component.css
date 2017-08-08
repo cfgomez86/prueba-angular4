@@ -1,0 +1,12 @@
+.titulo {
+    text-align: center;
+    color: #1F7DB9;
+}
+
+.centrar {
+    position: absolute;
+    top:20%;
+    left:28%;
+    width:800px;
+    padding:20px;
+}

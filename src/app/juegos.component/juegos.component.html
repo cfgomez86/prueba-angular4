@@ -1,0 +1,75 @@
+<table>
+    <tr>
+        <td>
+            <table class="table table-hover">
+                <thead >
+                    <tr>
+                        <th class="titulo" colspan="4">Partidos Fecha 6 </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Pasto:
+                        </td>
+                        <td>
+                            <input  type="number" name="golesPasto" min="0" max="99" required value="0" class="form-control"
+                                (change)="onChangeGoles($event.target.value, 'Pasto')"/>
+                        </td>
+                        <td>
+                            America:
+                        </td>
+                        <td>
+                            <input  type="number" name="golesAmerica" min="0" max="99" required value="0" class="form-control"
+                                (change)="onChangeGoles($event.target.value, 'America')"/>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Cortulua:
+                        </td>
+                        <td>
+                            <input type="number" name="golesTulua" min="0" max="99" required  value="0" class="form-control"
+                                (change)="onChangeGoles($event.target.value, 'Cortulua')"/>
+                        </td>
+                        <td>
+                            Santa Fe: 
+                        </td>
+                        <td>
+                            <input  type="number" name="golesSanta" min="0" max="99" required  value="0" class="form-control"
+                                (change)="onChangeGoles($event.target.value, 'SantaFe')"/> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Petrolera:
+                        </td>
+                        <td>
+                            <input type="number" name="golesPetrolera" min="0" max="99" required  value="0" class="form-control"
+                                (change)="onChangeGoles($event.target.value, 'Petrolera')"/>
+                        </td>
+                        <td>
+                            Jaguares: 
+                        </td>
+                        <td>                             
+                            <input type="number" name="golesJaguares" min="0" max="99" required  value="0" class="form-control"
+                                (change)="onChangeGoles($event.target.value, 'Jaguares')"/> 
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button type="button" class="btn btn-primary" (click)="calcularTabla()">Calcular Descenso</button>
+        </td>
+        <td>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+        <td>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+        <td>
+            <app-tabla-descenso [equipos]=equipos>
+            </app-tabla-descenso>
+        </td>
+    </tr>
+</table>

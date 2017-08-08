@@ -1,0 +1,18 @@
+<table  class="table table-bordered">
+    <thead >
+        <tr>
+            <th class="titulo">Posición</th>
+            <th class="titulo">Club</th>
+            <th class="titulo">N° Juegos</th>
+            <th class="titulo">Puntos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let club of equipos | orderBy: order; let i = index">
+            <td>{{20-i}}</td>
+            <td>{{club.nombre}}</td>
+            <td>{{club.cantidad}}</td>
+            <td>{{club.puntos}}</td>
+        </tr>
+    </tbody>
+</table>
